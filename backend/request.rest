@@ -1,0 +1,89 @@
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"student",
+    "email":"student@gmail.com",
+    "password":"123456",
+    "confPassword":"123456",
+    "role":"student"
+}
+
+###
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/user/a4131a50-6ba0-47c0-9523-fdf79d809b4d
+
+
+###
+PATCH http://localhost:5000/users/a4131a50-6ba0-47c0-9523-fdf79d809b4d
+Content-Type: application/json
+
+{
+    "name":"bhairav updated1",
+    "email":"user@gmail.com",
+    "password":"123456",
+    "confPassword":"123456",
+    "role":"user"
+}
+
+###
+DELETE http://localhost:5000/users/f2779e8a-3b3a-4d33-8a88-43617149571c
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"admin@gmail.com",
+    "password":"123456"
+ 
+}
+
+###
+GET http://localhost:5000/me
+
+###
+
+DELETE http://localhost:5000/logout
+
+###
+GET http://localhost:5000/products
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "fname":"Sai",
+    "lname":"asb",
+    "regdno":123,
+    "dept":"MECH",
+    "status":"Absent",
+    "date":"01-01-2022"
+ 
+}
+###
+PATCH http://localhost:5000/products/471663ce-4c38-4db8-8e52-dbcee51d3ec0
+Content-Type: application/json
+
+{
+    "fname": "Sai",
+    "lname": "asbupdated1",
+    "regdno": 123,
+    "dept": "MECH",
+    "status": "Present"
+}
+
+
+###
+
+DELETE http://localhost:5000/products/cd41a532-1a34-45b0-a467-534726efe248
+
+
+
+###
+GET http://localhost:5000/products/f63211c1-0c3c-43dd-be8e-09d6f109033b
